@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="global.js" type="module"></script>
-    <link rel = "stylesheet" href="style.css">
-    <nav>
+    <link rel = "stylesheet" href="../style.css">
+    <script src="../global.js" type ="module"></script>
+
+    <!--<nav>
         <a href="https://juseotin.github.io/portfolio/">Main</a>
         <a class="current">Contact</a>
         <a href="resume/index.html">CV/Resume</a>
         <a href="projects/index.html">projects</a>
         <a href="https://github.com/juseotin">Github</a>
-    </nav>
+    </nav>-->
     <Contact></title>
     <h1>Contact</h1>
     
@@ -19,12 +20,14 @@
 <body>
     
     
-</form action="mailto:https://miseo.ucsd.edu" method="POST">
-    <label="email">Your Email:<input name="email" type="email"></label>
-    <label="subject">Subject:<input name="subject"></label>
-    <label>Message:<textarea name="body"></textarea></label>
-
-    <button type="submit">Send</button>
+<form action="mailto:miseo@ucsd.edu">
+    <label for="email">Email:</label>
+    <input name="email" type="email" />
+    <label for="subject">Subject:</label>
+    <input name="subject" />
+    <label for="body">Body:</label>
+    <textarea name="body"></textarea>
+    <button type="Submit">Send</button>
 </form>
 </body>
 </html>

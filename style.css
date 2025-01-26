@@ -4,20 +4,28 @@
 
 html {
   accent-color: var(--color-accent);
+  color-scheme: light dark;
+   
+  
 }
 
 body {
-    font: 100%/1.5 system-ui;
-    max-width: 100ch;
-    margin-inline: auto;
-  }
+  font: 100%/1.5 system-ui;
+  display: block;
+  max-width: 100ch;
+  margin: 8px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  padding-top: 3rem;
+}
   nav {
+    --border-color: oklch(50% 10% 200 / 40%);
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    
     padding: 0.5rem 1rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid oklch(80% 3% 200);
+    border-bottom: 1px solid var(--border-color);
   }
   
   nav a {
@@ -27,7 +35,7 @@ body {
     margin: 0;
     text-decoration: none;
     color: inherit;
-    background-color: white;
+    
     transition: all 0.3s ease;
   }
   nav a:hover {
@@ -35,13 +43,41 @@ body {
     cursor: pointer;
     border-bottom: 0.4em solid var(--color-accent);
     color: var(--color-accent);
-    background-color: oklch(from var(--color-accent) 95% 5% h);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
   }
   
   nav a.current {
     border-bottom: 0.4em solid oklch(80% 3% 200);
     padding-bottom: 0.1em;
-    background-color: white;
+    
     font-weight: bold;
   }
   
+
+  input, textarea,button {
+    font: inherit;
+    display: grid;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5em;
+    margin-block: auto;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    grid-template-columns: subgrid;
+    max-width: 800px;
+    grid-column: 1 /-1;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+
+  .color-scheme{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
+    font-family: inherit;
+  }
+
+  .color-scheme select {
+    font-family: inherit;
+}
