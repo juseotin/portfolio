@@ -70,6 +70,38 @@ body {
     margin-bottom: 1em;
   }
 
+  .projects {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1.5em;
+    padding: 1em; 
+  }
+.projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    gap: 1em;
+    
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.projects h2 {
+    margin: 0; 
+    
+}
+h1 {
+    font-size: 400%;
+    margin-bottom: 1em; 
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+}
+
   .color-scheme{
     position: absolute;
     top: 1rem;
