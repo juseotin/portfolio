@@ -5,10 +5,10 @@ function $$(selector, context = document) {
 }
 
 let pages = [
-  {url: 'https://juseotin.github.io/portfolio/', title: 'Home'},
-  {url: 'https://juseotin.github.io/portfolio/contact/', title: 'Contact'},
-  {url: 'https://juseotin.github.io/portfolio/projects/', title: 'Projects'},
-  {url: 'https://juseotin.github.io/portfolio/resume/', title: 'CV/Resume'},
+  {url: 'portfolio', title: 'Home'},
+  {url: 'portfolio/contact/', title: 'Contact'},
+  {url: 'portfolio/projects/', title: 'Projects'},
+  {url: 'portfolio/resume/', title: 'CV/Resume'},
   {url: 'https://github.com/juseotin', title: 'Github'}
 ];
 
