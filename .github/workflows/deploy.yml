@@ -47,6 +47,7 @@ jobs:
           git commit -m "Update code statistics" || echo "No changes to commit"
           git push
           
+          
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
@@ -57,3 +58,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        permissions:
+          contents: write
+          pages: write
+          id-token: write
