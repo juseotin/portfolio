@@ -293,6 +293,5 @@ function createScatterplot() {
 document.addEventListener('DOMContentLoaded', async () => {
   await loadData();
   createScatterplot();
-  updateTooltipVisibility(false);
   brushSelector();
 });
